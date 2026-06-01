@@ -3,7 +3,7 @@
 	export let isPlex = false;
 </script>
 
-<button class:isPlex class:isActioned {...$$restProps} on:click|preventDefault>
+<button class:isPlex class:isActioned {...$$restProps} on:click>
 	<slot />
 </button>
 
