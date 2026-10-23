@@ -14,8 +14,9 @@ const config = {
 	],
 
 	kit: {
-		methodOverride: {
-			allowed: ['PUT']
+		// Served from several origins (LAN port, tunnel); the only form just builds a URL.
+		csrf: {
+			checkOrigin: false
 		},
 
 		adapter: adapter()

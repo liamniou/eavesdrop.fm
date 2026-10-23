@@ -15,7 +15,7 @@
 
 <form
 	method="post"
-	action={'/construct-url?_method=PUT'}
+	action={'/construct-url'}
 	on:input={() => ($state.isCopied = false)}
 >
 	<Card>
